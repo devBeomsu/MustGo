@@ -1,0 +1,211 @@
+//
+//  Restaurant.swift
+//  MustGo
+//
+//  Created by Raphael Shim on 2023/05/02.
+//
+
+import Foundation
+
+struct Restaurant {
+    var uuid = UUID().uuidString
+    var category: String
+    var foodImage: String
+    var name: String
+    var popularMenu: String
+    var weekday: String
+    var weekend: String
+    var price: String
+    var favorite: Bool
+}
+
+extension Restaurant {
+    static let lists: [Restaurant] = [
+        Restaurant(uuid: UUID().uuidString, category: "한식", foodImage: "", name: "한식1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "한식", foodImage: "", name: "한식2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "한식", foodImage: "", name: "한식3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "한식", foodImage: "", name: "한식4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "한식", foodImage: "", name: "한식5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "한식", foodImage: "", name: "한식6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "한식", foodImage: "", name: "한식7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "한식", foodImage: "", name: "한식8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "한식", foodImage: "", name: "한식9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "한식", foodImage: "", name: "한식10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "양식", foodImage: "", name: "양식1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "양식", foodImage: "", name: "양식2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "양식", foodImage: "", name: "양식3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "양식", foodImage: "", name: "양식4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "양식", foodImage: "", name: "양식5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "양식", foodImage: "", name: "양식6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "양식", foodImage: "", name: "양식7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "양식", foodImage: "", name: "양식8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "양식", foodImage: "", name: "양식9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "양식", foodImage: "", name: "양식10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "중식", foodImage: "", name: "중식1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "중식", foodImage: "", name: "중식2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "중식", foodImage: "", name: "중식3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "중식", foodImage: "", name: "중식4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "중식", foodImage: "", name: "중식5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "중식", foodImage: "", name: "중식6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "중식", foodImage: "", name: "중식7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "중식", foodImage: "", name: "중식8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "중식", foodImage: "", name: "중식9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "중식", foodImage: "", name: "중식10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "일식", foodImage: "", name: "일식1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "일식", foodImage: "", name: "일식2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "일식", foodImage: "", name: "일식3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "일식", foodImage: "", name: "일식4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "일식", foodImage: "", name: "일식5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "일식", foodImage: "", name: "일식6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "일식", foodImage: "", name: "일식7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "일식", foodImage: "", name: "일식8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "일식", foodImage: "", name: "일식9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "일식", foodImage: "", name: "일식10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "분식", foodImage: "", name: "분식1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "분식", foodImage: "", name: "분식2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "분식", foodImage: "", name: "분식3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "분식", foodImage: "", name: "분식4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "분식", foodImage: "", name: "분식5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "분식", foodImage: "", name: "분식6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "분식", foodImage: "", name: "분식7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "분식", foodImage: "", name: "분식8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "분식", foodImage: "", name: "분식9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "분식", foodImage: "", name: "분식10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "기타", foodImage: "", name: "기타1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "기타", foodImage: "", name: "기타2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "기타", foodImage: "", name: "기타3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "기타", foodImage: "", name: "기타4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "기타", foodImage: "", name: "기타5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "기타", foodImage: "", name: "기타6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "기타", foodImage: "", name: "기타7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "기타", foodImage: "", name: "기타8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "기타", foodImage: "", name: "기타9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "기타", foodImage: "", name: "기타10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "고깃집", foodImage: "", name: "고깃집1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "고깃집", foodImage: "", name: "고깃집2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "고깃집", foodImage: "", name: "고깃집3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "고깃집", foodImage: "", name: "고깃집4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "고깃집", foodImage: "", name: "고깃집5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "고깃집", foodImage: "", name: "고깃집6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "고깃집", foodImage: "", name: "고깃집7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "고깃집", foodImage: "", name: "고깃집8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "고깃집", foodImage: "", name: "고깃집9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "고깃집", foodImage: "", name: "고깃집10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "횟집", foodImage: "", name: "횟집1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "횟집", foodImage: "", name: "횟집2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "횟집", foodImage: "", name: "횟집3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "횟집", foodImage: "", name: "횟집4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "횟집", foodImage: "", name: "횟집5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "횟집", foodImage: "", name: "횟집6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "횟집", foodImage: "", name: "횟집7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "횟집", foodImage: "", name: "횟집8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "횟집", foodImage: "", name: "횟집9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "횟집", foodImage: "", name: "횟집10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "요리주점", foodImage: "", name: "요리주점1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "요리주점", foodImage: "", name: "요리주점2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "요리주점", foodImage: "", name: "요리주점3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "요리주점", foodImage: "", name: "요리주점4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "요리주점", foodImage: "", name: "요리주점5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "요리주점", foodImage: "", name: "요리주점6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "요리주점", foodImage: "", name: "요리주점7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "요리주점", foodImage: "", name: "요리주점8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "요리주점", foodImage: "", name: "요리주점9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "요리주점", foodImage: "", name: "요리주점10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "족발/보쌈", foodImage: "", name: "족발/보쌈1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "족발/보쌈", foodImage: "", name: "족발/보쌈2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "족발/보쌈", foodImage: "", name: "족발/보쌈3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "족발/보쌈", foodImage: "", name: "족발/보쌈4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "족발/보쌈", foodImage: "", name: "족발/보쌈5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "족발/보쌈", foodImage: "", name: "족발/보쌈6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "족발/보쌈", foodImage: "", name: "족발/보쌈7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "족발/보쌈", foodImage: "", name: "족발/보쌈8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "족발/보쌈", foodImage: "", name: "족발/보쌈9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "족발/보쌈", foodImage: "", name: "족발/보쌈10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "곱창/막창", foodImage: "", name: "곱창/막창1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "곱창/막창", foodImage: "", name: "곱창/막창2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "곱창/막창", foodImage: "", name: "곱창/막창3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "곱창/막창", foodImage: "", name: "곱창/막창4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "곱창/막창", foodImage: "", name: "곱창/막창5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "곱창/막창", foodImage: "", name: "곱창/막창6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "곱창/막창", foodImage: "", name: "곱창/막창7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "곱창/막창", foodImage: "", name: "곱창/막창8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "곱창/막창", foodImage: "", name: "곱창/막창9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "곱창/막창", foodImage: "", name: "곱창/막창10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "돈가스", foodImage: "", name: "돈가스1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "돈가스", foodImage: "", name: "돈가스2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "돈가스", foodImage: "", name: "돈가스3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "돈가스", foodImage: "", name: "돈가스4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "돈가스", foodImage: "", name: "돈가스5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "돈가스", foodImage: "", name: "돈가스6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "돈가스", foodImage: "", name: "돈가스7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "돈가스", foodImage: "", name: "돈가스8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "돈가스", foodImage: "", name: "돈가스9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "돈가스", foodImage: "", name: "돈가스10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "치킨/피자", foodImage: "", name: "치킨/피자1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "치킨/피자", foodImage: "", name: "치킨/피자2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "치킨/피자", foodImage: "", name: "치킨/피자3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "치킨/피자", foodImage: "", name: "치킨/피자4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "치킨/피자", foodImage: "", name: "치킨/피자5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "치킨/피자", foodImage: "", name: "치킨/피자6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "치킨/피자", foodImage: "", name: "치킨/피자7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "치킨/피자", foodImage: "", name: "치킨/피자8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "치킨/피자", foodImage: "", name: "치킨/피자9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "치킨/피자", foodImage: "", name: "치킨/피자10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "맥주/호프", foodImage: "", name: "맥주/호프1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "맥주/호프", foodImage: "", name: "맥주/호프2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "맥주/호프", foodImage: "", name: "맥주/호프3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "맥주/호프", foodImage: "", name: "맥주/호프4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "맥주/호프", foodImage: "", name: "맥주/호프5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "맥주/호프", foodImage: "", name: "맥주/호프6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "맥주/호프", foodImage: "", name: "맥주/호프7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "맥주/호프", foodImage: "", name: "맥주/호프8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "맥주/호프", foodImage: "", name: "맥주/호프9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "맥주/호프", foodImage: "", name: "맥주/호프10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "다이어트", foodImage: "", name: "다이어트1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "다이어트", foodImage: "", name: "다이어트2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "다이어트", foodImage: "", name: "다이어트3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "다이어트", foodImage: "", name: "다이어트4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "다이어트", foodImage: "", name: "다이어트5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "다이어트", foodImage: "", name: "다이어트6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "다이어트", foodImage: "", name: "다이어트7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "다이어트", foodImage: "", name: "다이어트8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "다이어트", foodImage: "", name: "다이어트9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "다이어트", foodImage: "", name: "다이어트10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "패스트푸드", foodImage: "", name: "패스트푸드1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "패스트푸드", foodImage: "", name: "패스트푸드2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "패스트푸드", foodImage: "", name: "패스트푸드3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "패스트푸드", foodImage: "", name: "패스트푸드4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "패스트푸드", foodImage: "", name: "패스트푸드5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "패스트푸드", foodImage: "", name: "패스트푸드6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "패스트푸드", foodImage: "", name: "패스트푸드7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "패스트푸드", foodImage: "", name: "패스트푸드8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "패스트푸드", foodImage: "", name: "패스트푸드9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "패스트푸드", foodImage: "", name: "패스트푸드10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        
+        Restaurant(uuid: UUID().uuidString, category: "카페/디저트", foodImage: "", name: "카페/디저트1", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "카페/디저트", foodImage: "", name: "카페/디저트2", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "카페/디저트", foodImage: "", name: "카페/디저트3", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "카페/디저트", foodImage: "", name: "카페/디저트4", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "카페/디저트", foodImage: "", name: "카페/디저트5", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "카페/디저트", foodImage: "", name: "카페/디저트6", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "카페/디저트", foodImage: "", name: "카페/디저트7", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "카페/디저트", foodImage: "", name: "카페/디저트8", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "카페/디저트", foodImage: "", name: "카페/디저트9", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+        Restaurant(uuid: UUID().uuidString, category: "카페/디저트", foodImage: "", name: "카페/디저트10", popularMenu: "인기메뉴", weekday: "09:00~00:00", weekend: "09:00~00:00", price: "6,000~8,000", favorite: false),
+    ]
+}
